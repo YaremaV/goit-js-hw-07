@@ -5,9 +5,7 @@ inputRef.addEventListener('input',updateValue)
 
 function updateValue(e) {
   
-    if (e.target.value === '') {
-        return 'незнакомец'
-    }
-  nameOutputRef.textContent = e.target.value;
-  
+    if (e.currentTarget.value === '') {
+      nameOutputRef.textContent = 'незнакомец';
+    } else nameOutputRef.textContent = e.currentTarget.value;
 }

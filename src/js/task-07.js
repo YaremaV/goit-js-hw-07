@@ -6,4 +6,4 @@ function onInput(event) {
    textRef.style.fontSize = event.currentTarget.value + "px";
  }
 
-fzControl.addEventListener('change', onInput)
+fzControl.addEventListener('input', onInput)
